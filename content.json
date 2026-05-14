@@ -18,10 +18,10 @@
     {
       "id": 2,
       "type": "PARK",
-      "title": "Big Bend National Park",
-      "summary": "One of the most remote and rewarding parks in Texas. Here's what RVers need to know before they go.",
+      "title": "Texas Park Guides",
+      "summary": "RV guides for Texas state and national parks. Updated regularly.",
       "image_url": "https://reinaldomedina.github.io/ta2-content/images/park1.jpg",
-      "link": "https://reinaldomedina.github.io/ta2-content/parks/bigbend.html",
+      "link": "https://reinaldomedina.github.io/ta2-content/parks/index.html",
       "enabled": true
     },
     {
