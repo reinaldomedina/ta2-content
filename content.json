@@ -1,0 +1,25 @@
+{
+  "hero_images": [
+    {
+      "id": 1,
+      "url": "https://reinaldomedina.github.io/ta2-content/images/hero1.jpg",
+      "credit": "Open Road"
+    }
+  ],
+  "discover_cards": [
+    {
+      "id": 1,
+      "type": "TIP",
+      "title": "Winterizing your fresh water system",
+      "summary": "Before temps drop below freezing, flush and protect your lines.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/tip1.jpg",
+      "enabled": true
+    },
+    {
+      "id": "ad_slot_1",
+      "type": "AD",
+      "enabled": false,
+      "content": null
+    }
+  ]
+}
