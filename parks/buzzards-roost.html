@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzzard's Roost — TrekAssistant Park Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f7; color: #1a1a1a; }
+    .hero { position: relative; height: 280px; overflow: hidden; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%); }
+    .hero-text { position: absolute; bottom: 20px; left: 20px; right: 20px; color: white; }
+    .hero-text .state { font-size: 12px; font-weight: 600; letter-spacing: 1px; opacity: 0.8; text-transform: uppercase; }
+    .hero-text h1 { font-size: 26px; font-weight: 800; line-height: 1.2; margin-top: 4px; }
+    .back { display: flex; align-items: center; gap: 6px; padding: 14px 20px; font-size: 14px; color: #1a3a6e; font-weight: 600; border-bottom: 1px solid #e0e0e0; background: white; }
+    .content { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .badge { background: #e8f0fe; color: #1a3a6e; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
+    .badge.green { background: #e6f4ea; color: #1e6b3a; }
+    .badge.amber { background: #fff3e0; color: #8a4f00; }
+    .badge.red { background: #fde8e8; color: #8a1a1a; }
+    .tip-box { background: #1a3a6e; color: white; border-radius: 12px; padding: 16px; margin-bottom: 20px; }
+    .tip-box .tip-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; opacity: 0.7; margin-bottom: 6px; }
+    .tip-box p { font-size: 15px; line-height: 1.5; }
+    .section { margin-bottom: 24px; }
+    .section h2 { font-size: 16px; font-weight: 700; color: #1a3a6e; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #e8f0fe; }
+    .info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+    .info-row .label { color: #666; }
+    .info-row .value { font-weight: 600; color: #1a1a1a; text-align: right; }
+    .amenity-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+    .amenity { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 6px 12px; font-size: 13px; color: #333; }
+    .gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
+    .reserve-btn { display: block; background: #1a3a6e; color: white; text-align: center; padding: 14px; border-radius: 12px; font-size: 16px; font-weight: 700; text-decoration: none; margin-bottom: 30px; }
+    .footer { text-align: center; font-size: 12px; color: #aaa; padding: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="back">← TrekAssistant Park Guide</div>
+
+<div class="hero">
+  <img src="https://content.trekassistant.com/images/parks/Murray.jpg" alt="Buzzard's Roost Lake Murray" />
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <div class="state">Oklahoma · Lake Murray State Park</div>
+    <h1>Buzzard's Roost</h1>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="badges">
+    <span class="badge">Full Hookups</span>
+    <span class="badge green">Lakefront Sites</span>
+    <span class="badge amber">Rough Access Road</span>
+    <span class="badge green">Open Year-Round</span>
+    <span class="badge">50 Amp</span>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-label">🚐 RVer's Tip</div>
+    <p>The access road is rough — take it slow. But once you're in, the lake is literally at your feet. Worth every bump. Tons of things to do in the area including Tucker Tower, horseback riding, and the Lake Murray Golf Course.</p>
+  </div>
+
+  <div class="gallery">
+    <img src="https://content.trekassistant.com/images/parks/Murray.jpg" alt="Lake Murray from Tucker Tower" />
+  </div>
+
+  <div class="section">
+    <h2>Park Details</h2>
+    <div class="info-row"><span class="label">Address</span><span class="value">3323 Lodge Rd, Ardmore, OK 73401</span></div>
+    <div class="info-row"><span class="label">Lake</span><span class="value">Lake Murray (5,728 acres)</span></div>
+    <div class="info-row"><span class="label">Managed by</span><span class="value">Oklahoma State Parks</span></div>
+    <div class="info-row"><span class="label">Total Sites</span><span class="value">40 sites</span></div>
+    <div class="info-row"><span class="label">Hookups</span><span class="value">18 full hookup, 30/50 amp</span></div>
+    <div class="info-row"><span class="label">Pull-Throughs</span><span class="value">3 available</span></div>
+    <div class="info-row"><span class="label">Daily Parking</span><span class="value">$10/vehicle</span></div>
+    <div class="info-row"><span class="label">ADA Sites</span><span class="value">4 accessible sites</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Amenities</h2>
+    <div class="amenity-grid">
+      <span class="amenity">⚡ 30/50 Amp</span>
+      <span class="amenity">🚿 Showers</span>
+      <span class="amenity">🚽 Flush Toilets</span>
+      <span class="amenity">🛥 Boat Launch</span>
+      <span class="amenity">🗑 Dump Station</span>
+      <span class="amenity">🛝 Playground</span>
+      <span class="amenity">🎣 Fishing</span>
+      <span class="amenity">🏇 Horseback Riding</span>
+      <span class="amenity">⛳ Golf Course</span>
+      <span class="amenity">🏛 Tucker Tower</span>
+      <span class="amenity">🥾 Hiking Trails</span>
+      <span class="amenity">🐾 Pet Friendly</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>About</h2>
+    <p style="font-size:14px;line-height:1.7;color:#444;">Buzzard's Roost is one of nine campgrounds in Lake Murray State Park, Oklahoma's first and largest state park. The campground sits on the southeast end of Lake Murray with direct lakefront access — sites are literally steps from the water. The iconic Tucker Tower offers panoramic views of the lake and a fascinating history. The clear blue-green water here is unlike most Oklahoma lakes.</p>
+  </div>
+
+  <a href="https://www.travelok.com/state-parks/lake-murray-state-park" class="reserve-btn">More Info at TravelOK.com →</a>
+
+</div>
+
+<div class="footer">TrekAssistant Park Guide · content.trekassistant.com</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lake Ouachita State Park — TrekAssistant Park Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f7; color: #1a1a1a; }
+    .hero { position: relative; height: 280px; overflow: hidden; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%); }
+    .hero-text { position: absolute; bottom: 20px; left: 20px; right: 20px; color: white; }
+    .hero-text .state { font-size: 12px; font-weight: 600; letter-spacing: 1px; opacity: 0.8; text-transform: uppercase; }
+    .hero-text h1 { font-size: 26px; font-weight: 800; line-height: 1.2; margin-top: 4px; }
+    .back { display: flex; align-items: center; gap: 6px; padding: 14px 20px; font-size: 14px; color: #1a3a6e; font-weight: 600; border-bottom: 1px solid #e0e0e0; background: white; }
+    .content { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .badge { background: #e8f0fe; color: #1a3a6e; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
+    .badge.green { background: #e6f4ea; color: #1e6b3a; }
+    .badge.amber { background: #fff3e0; color: #8a4f00; }
+    .tip-box { background: #1a3a6e; color: white; border-radius: 12px; padding: 16px; margin-bottom: 20px; }
+    .tip-box .tip-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; opacity: 0.7; margin-bottom: 6px; }
+    .tip-box p { font-size: 15px; line-height: 1.5; }
+    .section { margin-bottom: 24px; }
+    .section h2 { font-size: 16px; font-weight: 700; color: #1a3a6e; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #e8f0fe; }
+    .info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+    .info-row .label { color: #666; }
+    .info-row .value { font-weight: 600; color: #1a1a1a; text-align: right; }
+    .amenity-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+    .amenity { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 6px 12px; font-size: 13px; color: #333; }
+    .gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
+    .reserve-btn { display: block; background: #1a3a6e; color: white; text-align: center; padding: 14px; border-radius: 12px; font-size: 16px; font-weight: 700; text-decoration: none; margin-bottom: 30px; }
+    .footer { text-align: center; font-size: 12px; color: #aaa; padding: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="back">← TrekAssistant Park Guide</div>
+
+<div class="hero">
+  <img src="https://content.trekassistant.com/images/parks/Ouachita.jpg" alt="Lake Ouachita" />
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <div class="state">Arkansas · Ouachita National Forest</div>
+    <h1>Lake Ouachita State Park</h1>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="badges">
+    <span class="badge">Full Hookups</span>
+    <span class="badge green">Pets Allowed</span>
+    <span class="badge">Reservations Required</span>
+    <span class="badge green">Open Year-Round</span>
+    <span class="badge amber">Near Hot Springs</span>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-label">🚐 RVer's Tip</div>
+    <p>A great base for exploring Hot Springs — somewhat secluded but very manageable. Great views, excellent hiking, and the lake is pristine. The wildlife here is exceptional, especially for bird watching.</p>
+  </div>
+
+  <div class="gallery">
+    <img src="https://content.trekassistant.com/images/parks/Ouachita.jpg" alt="Lake Ouachita wildlife" />
+  </div>
+
+  <div class="section">
+    <h2>Park Details</h2>
+    <div class="info-row"><span class="label">Location</span><span class="value">Mountain Pine, AR (near Hot Springs)</span></div>
+    <div class="info-row"><span class="label">Lake</span><span class="value">Lake Ouachita (975 mi shoreline)</span></div>
+    <div class="info-row"><span class="label">Managed by</span><span class="value">Arkansas State Parks</span></div>
+    <div class="info-row"><span class="label">RV Sites</span><span class="value">93 sites, 58 full hookup</span></div>
+    <div class="info-row"><span class="label">Max RV Length</span><span class="value">50 feet</span></div>
+    <div class="info-row"><span class="label">Nightly Rate</span><span class="value">From $34 (full hookup)</span></div>
+    <div class="info-row"><span class="label">Max Stay</span><span class="value">14 days</span></div>
+    <div class="info-row"><span class="label">Reservations</span><span class="value">reserve.arkansasstateparks.com</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Amenities</h2>
+    <div class="amenity-grid">
+      <span class="amenity">⚡ Full Hookups</span>
+      <span class="amenity">🚿 Hot Showers</span>
+      <span class="amenity">🛥 Marina & Dock</span>
+      <span class="amenity">🏊 Swim Beach</span>
+      <span class="amenity">🥾 Hiking Trails</span>
+      <span class="amenity">🚵 Biking</span>
+      <span class="amenity">🐾 Pet Friendly</span>
+      <span class="amenity">🎣 Fishing</span>
+      <span class="amenity">🏕 Waterfront Sites</span>
+      <span class="amenity">🌲 Wooded Sites</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>About</h2>
+    <p style="font-size:14px;line-height:1.7;color:#444;">Lake Ouachita is one of the cleanest lakes in Arkansas with 975 miles of pristine shoreline. Located on the edge of the Ouachita National Forest, the park is about 1 hour 20 minutes west of Little Rock and a short drive from the historic Hot Springs district — making it the perfect base for exploring the Spa City while enjoying world-class camping. Wildlife is abundant including mallards, herons, and deer.</p>
+  </div>
+
+  <a href="https://reserve.arkansasstateparks.com/lake-ouachita/camping" class="reserve-btn">Reserve at arkansasstateparks.com →</a>
+
+</div>
+
+<div class="footer">TrekAssistant Park Guide · content.trekassistant.com</div>
+</body>
+</html>

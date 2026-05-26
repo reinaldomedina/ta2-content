@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burns Run East — TrekAssistant Park Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f7; color: #1a1a1a; }
+    .hero { position: relative; height: 280px; overflow: hidden; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%); }
+    .hero-text { position: absolute; bottom: 20px; left: 20px; right: 20px; color: white; }
+    .hero-text .state { font-size: 12px; font-weight: 600; letter-spacing: 1px; opacity: 0.8; text-transform: uppercase; }
+    .hero-text h1 { font-size: 26px; font-weight: 800; line-height: 1.2; margin-top: 4px; }
+    .back { display: flex; align-items: center; gap: 6px; padding: 14px 20px; font-size: 14px; color: #1a3a6e; font-weight: 600; border-bottom: 1px solid #e0e0e0; background: white; }
+    .content { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .badge { background: #e8f0fe; color: #1a3a6e; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
+    .badge.green { background: #e6f4ea; color: #1e6b3a; }
+    .badge.amber { background: #fff3e0; color: #8a4f00; }
+    .tip-box { background: #1a3a6e; color: white; border-radius: 12px; padding: 16px; margin-bottom: 20px; }
+    .tip-box .tip-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; opacity: 0.7; margin-bottom: 6px; }
+    .tip-box p { font-size: 15px; line-height: 1.5; }
+    .section { margin-bottom: 24px; }
+    .section h2 { font-size: 16px; font-weight: 700; color: #1a3a6e; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #e8f0fe; }
+    .info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+    .info-row .label { color: #666; }
+    .info-row .value { font-weight: 600; color: #1a1a1a; text-align: right; }
+    .amenity-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+    .amenity { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 6px 12px; font-size: 13px; color: #333; }
+    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
+    .gallery img { width: 100%; height: 140px; object-fit: cover; border-radius: 10px; }
+    .gallery img.full { grid-column: 1 / -1; height: 200px; }
+    .reserve-btn { display: block; background: #1a3a6e; color: white; text-align: center; padding: 14px; border-radius: 12px; font-size: 16px; font-weight: 700; text-decoration: none; margin-bottom: 30px; }
+    .footer { text-align: center; font-size: 12px; color: #aaa; padding: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="back">← TrekAssistant Park Guide</div>
+
+<div class="hero">
+  <img src="https://content.trekassistant.com/images/parks/bre.jpg" alt="Burns Run East" />
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <div class="state">Oklahoma · Lake Texoma</div>
+    <h1>Burns Run East</h1>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="badges">
+    <span class="badge">Electric & Water</span>
+    <span class="badge green">Pets Allowed</span>
+    <span class="badge">Reservations Required</span>
+    <span class="badge amber">Open Year-Round</span>
+  </div>
+
+  <div class="tip-box">
+    <div class="tip-label">🚐 RVer's Tip</div>
+    <p>Limited shade on the sites but great direct access to the lake. Perfect for fishing and water sports. Sunsets here are absolutely stunning.</p>
+  </div>
+
+  <div class="gallery">
+    <img class="full" src="https://content.trekassistant.com/images/parks/bre.jpg" alt="Burns Run East sunset" />
+    <img src="https://content.trekassistant.com/images/parks/bre2.jpg" alt="Burns Run East night" />
+    <img src="https://content.trekassistant.com/images/parks/bre3.jpg" alt="Burns Run East twilight" />
+  </div>
+
+  <div class="section">
+    <h2>Park Details</h2>
+    <div class="info-row"><span class="label">Location</span><span class="value">Cartwright, OK 74731</span></div>
+    <div class="info-row"><span class="label">Lake</span><span class="value">Lake Texoma</span></div>
+    <div class="info-row"><span class="label">Managed by</span><span class="value">Army Corps of Engineers</span></div>
+    <div class="info-row"><span class="label">Total Sites</span><span class="value">53 sites</span></div>
+    <div class="info-row"><span class="label">Hookups</span><span class="value">44 Electric & Water</span></div>
+    <div class="info-row"><span class="label">Max RV Length</span><span class="value">95 feet</span></div>
+    <div class="info-row"><span class="label">Nightly Rate</span><span class="value">$20–$26</span></div>
+    <div class="info-row"><span class="label">Reservations</span><span class="value">Recreation.gov</span></div>
+    <div class="info-row"><span class="label">Phone</span><span class="value">580-965-4660</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Amenities</h2>
+    <div class="amenity-grid">
+      <span class="amenity">🚿 Showers</span>
+      <span class="amenity">🚽 Flush Toilets</span>
+      <span class="amenity">🛥 Boat Ramp</span>
+      <span class="amenity">🏊 Swimming Beach</span>
+      <span class="amenity">🗑 Dump Station</span>
+      <span class="amenity">🛝 Playground</span>
+      <span class="amenity">🐾 Pet Friendly</span>
+      <span class="amenity">💧 Drinking Water</span>
+      <span class="amenity">🎣 Fishing Dock</span>
+      <span class="amenity">🍖 Picnic Shelter</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>About the Lake</h2>
+    <p style="font-size:14px;line-height:1.7;color:#444;">Lake Texoma sits on the Oklahoma-Texas border and is known as the "Striper Capital of the World." With over 89,000 acres of water, it offers world-class striped bass fishing, boating, and water sports. Deer, turkeys, hawks, and waterfowl are abundant around the campground.</p>
+  </div>
+
+  <a href="https://www.recreation.gov/camping/campgrounds/233445" class="reserve-btn">Reserve on Recreation.gov →</a>
+
+</div>
+
+<div class="footer">TrekAssistant Park Guide · content.trekassistant.com</div>
+
+</body>
+</html>
