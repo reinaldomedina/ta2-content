@@ -2,17 +2,17 @@
   "hero_images": [
     {
       "id": "hero1",
-      "url": "https://content.trekassistant.com/images/parks/bre.jpg",
-      "credit": "Lake Texoma"
+      "url": "https://reinaldomedina.github.io/ta2-content/images/hero1.jpg",
+      "credit": "Open Road"
     },
     {
       "id": "hero2",
-      "url": "https://content.trekassistant.com/images/parks/brw.jpg",
+      "url": "https://reinaldomedina.github.io/ta2-content/images/parks/bre.jpg",
       "credit": "Lake Texoma"
     },
     {
       "id": "hero3",
-      "url": "https://content.trekassistant.com/images/parks/Murray.jpg",
+      "url": "https://reinaldomedina.github.io/ta2-content/images/parks/Murray.jpg",
       "credit": "Lake Murray, Oklahoma"
     }
   ],
@@ -22,62 +22,17 @@
       "type": "TIP",
       "title": "Winterizing Your Fresh Water System",
       "summary": "Before temps drop below freezing, flush and protect your lines.",
-      "image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/tip1.jpg",
       "link": "",
       "enabled": true
     },
     {
-      "id": "park001",
+      "id": "park_guide",
       "type": "PARK",
-      "title": "Burns Run East — Lake Texoma, OK",
-      "summary": "Direct lake access on the Striper Capital of the World. Open year-round. 44 electric & water sites, swimming beach, boat ramp.",
-      "image_url": "https://content.trekassistant.com/images/parks/bre.jpg",
-      "link": "https://content.trekassistant.com/parks/burns-run-east.html",
-      "enabled": true
-    },
-    {
-      "id": "park002",
-      "type": "PARK",
-      "title": "Burns Run West — Lake Texoma, OK",
-      "summary": "117 sites with a beautiful tree canopy in Section C. Trails, beach, and world-class striped bass fishing on Lake Texoma.",
-      "image_url": "https://content.trekassistant.com/images/parks/brw.jpg",
-      "link": "https://content.trekassistant.com/parks/burns-run-west.html",
-      "enabled": true
-    },
-    {
-      "id": "park003",
-      "type": "PARK",
-      "title": "Twin Coves Park — Flower Mound, TX",
-      "summary": "Hidden gem on Grapevine Lake. Immaculate park with full hookups, 22-mile Northshore Trail, kayak rentals, and outstanding staff.",
-      "image_url": "https://content.trekassistant.com/images/parks/twincove.jpg",
-      "link": "https://content.trekassistant.com/parks/twin-coves.html",
-      "enabled": true
-    },
-    {
-      "id": "park004",
-      "type": "PARK",
-      "title": "Lake Ouachita State Park — Arkansas",
-      "summary": "The cleanest lake in Arkansas. 58 full hookup sites on 975 miles of pristine shoreline. Perfect base for exploring Hot Springs.",
-      "image_url": "https://content.trekassistant.com/images/parks/Ouachita.jpg",
-      "link": "https://content.trekassistant.com/parks/lake-ouachita.html",
-      "enabled": true
-    },
-    {
-      "id": "park005",
-      "type": "PARK",
-      "title": "Buzzard's Roost — Lake Murray, OK",
-      "summary": "Rough road in, lake at your feet. Lakefront sites at one of Oklahoma's most scenic state parks. Tucker Tower views are unforgettable.",
-      "image_url": "https://content.trekassistant.com/images/parks/Murray.jpg",
-      "link": "https://content.trekassistant.com/parks/buzzards-roost.html",
-      "enabled": true
-    },
-    {
-      "id": "park006",
-      "type": "PARK",
-      "title": "Pilot Knoll Park — Highland Village, TX",
-      "summary": "Beautiful lakefront park on Lake Lewisville with city conveniences next door. Great wildlife, hiking, and equestrian trails.",
-      "image_url": "https://content.trekassistant.com/images/parks/Pilot%20Knolls.jpg",
-      "link": "https://content.trekassistant.com/parks/pilot-knoll.html",
+      "title": "RV Park Guides",
+      "summary": "Handpicked parks reviewed by RVers like you. Lake Texoma, Grapevine Lake, Lake Murray, Lake Ouachita and more.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/bre2.jpg",
+      "link": "https://reinaldomedina.github.io/ta2-content/parks/index.html",
       "enabled": true
     }
   ]
