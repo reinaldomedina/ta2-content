@@ -11,12 +11,12 @@
     header h1 { font-size: 24px; font-weight: 800; }
     header p { font-size: 14px; opacity: 0.75; margin-top: 4px; }
     .list { max-width: 680px; margin: 0 auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
-    .tip-card { background: white; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; display: flex; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
-    .tip-card img { width: 90px; height: 90px; object-fit: cover; flex-shrink: 0; }
+    .tip-card { background: white; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; display: flex; align-items: center; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .tip-icon { width: 90px; height: 90px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
     .tip-card .info { padding: 12px 14px; display: flex; flex-direction: column; justify-content: center; gap: 4px; flex: 1; }
-    .tip-card .tag { font-size: 10px; font-weight: 700; color: #1a3a6e; letter-spacing: 0.5px; text-transform: uppercase; }
+    .tip-card .tag { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
     .tip-card .name { font-size: 15px; font-weight: 700; color: #1a1a1a; line-height: 1.3; }
-    .tip-card .arrow { padding-right: 14px; display: flex; align-items: center; color: #1a3a6e; font-size: 18px; flex-shrink: 0; }
+    .tip-card .arrow { padding-right: 14px; display: flex; align-items: center; color: #ccc; font-size: 20px; flex-shrink: 0; }
     footer { text-align: center; font-size: 12px; color: #aaa; padding: 24px; }
   </style>
 </head>
@@ -29,73 +29,197 @@
 
 <div class="list">
 
+  <!-- Hitch Safely -->
   <a class="tip-card" href="https://reinaldomedina.github.io/ta2-content/tips/hitch-safely.html">
-    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/brw.jpg" alt="Hitching" />
+    <div class="tip-icon">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="14" fill="#e8f0fe"/>
+        <rect x="10" y="28" width="22" height="10" rx="3" fill="#1a3a6e" opacity="0.15"/>
+        <rect x="10" y="28" width="22" height="10" rx="3" stroke="#1a3a6e" stroke-width="1.8" fill="none"/>
+        <rect x="14" y="22" width="14" height="8" rx="2" fill="#1a3a6e" opacity="0.15"/>
+        <rect x="14" y="22" width="14" height="8" rx="2" stroke="#1a3a6e" stroke-width="1.8" fill="none"/>
+        <circle cx="37" cy="30" r="5" fill="#1a3a6e" opacity="0.15"/>
+        <circle cx="37" cy="30" r="5" stroke="#1a3a6e" stroke-width="1.8" fill="none"/>
+        <circle cx="37" cy="30" r="2" fill="#1a3a6e"/>
+        <line x1="32" y1="30" x2="32" y2="30" stroke="#1a3a6e" stroke-width="2"/>
+        <path d="M32 30 H28" stroke="#1a3a6e" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="15" cy="38" r="4" fill="white" stroke="#1a3a6e" stroke-width="1.8"/>
+        <circle cx="27" cy="38" r="4" fill="white" stroke="#1a3a6e" stroke-width="1.8"/>
+        <path d="M20 16 L26 22 M20 22 L26 16" stroke="#e8842a" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
     <div class="info">
-      <span class="tag">Safety</span>
+      <span class="tag" style="color:#1a3a6e;">Safety</span>
       <span class="name">How to Hitch a Travel Trailer Safely</span>
     </div>
     <div class="arrow">›</div>
   </a>
 
+  <!-- Summer Ready -->
   <a class="tip-card" href="https://reinaldomedina.github.io/ta2-content/tips/summer-ready.html">
-    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/twincove.jpg" alt="Summer Ready" />
+    <div class="tip-icon">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="14" fill="#fff8e1"/>
+        <circle cx="26" cy="22" r="7" fill="#f4b942" opacity="0.3"/>
+        <circle cx="26" cy="22" r="7" stroke="#f4b942" stroke-width="2" fill="none"/>
+        <circle cx="26" cy="22" r="3" fill="#f4b942"/>
+        <line x1="26" y1="11" x2="26" y2="9" stroke="#f4b942" stroke-width="2" stroke-linecap="round"/>
+        <line x1="26" y1="35" x2="26" y2="33" stroke="#f4b942" stroke-width="2" stroke-linecap="round"/>
+        <line x1="15" y1="22" x2="13" y2="22" stroke="#f4b942" stroke-width="2" stroke-linecap="round"/>
+        <line x1="39" y1="22" x2="37" y2="22" stroke="#f4b942" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18.5" y1="14.5" x2="17" y2="13" stroke="#f4b942" stroke-width="2" stroke-linecap="round"/>
+        <line x1="35" y1="31" x2="33.5" y2="29.5" stroke="#f4b942" stroke-width="2" stroke-linecap="round"/>
+        <line x1="33.5" y1="14.5" x2="35" y2="13" stroke="#f4b942" stroke-width="2" stroke-linecap="round"/>
+        <path d="M16 38 L20 32 H32 L36 38" stroke="#1a3a6e" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+        <path d="M22 32 L22 36 M26 32 L26 36 M30 32 L30 36" stroke="#1a3a6e" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M18 40 H34" stroke="#1a3a6e" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
     <div class="info">
-      <span class="tag">Maintenance</span>
+      <span class="tag" style="color:#1a6b3a;">Maintenance</span>
       <span class="name">Top 10 Checks After Winter Storage</span>
     </div>
     <div class="arrow">›</div>
   </a>
 
+  <!-- Beverages -->
   <a class="tip-card" href="https://reinaldomedina.github.io/ta2-content/tips/summer-beverages.html">
-    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/Ouachita.jpg" alt="Beverages" />
+    <div class="tip-icon">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="14" fill="#fff3e0"/>
+        <path d="M19 14 H33 L30 38 H22 Z" fill="#e8842a" opacity="0.15"/>
+        <path d="M19 14 H33 L30 38 H22 Z" stroke="#e8842a" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+        <line x1="18" y1="20" x2="34" y2="20" stroke="#e8842a" stroke-width="1.5"/>
+        <path d="M33 17 Q38 20 36 25 Q34 28 33 25" stroke="#e8842a" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <circle cx="24" cy="27" r="1.5" fill="#e8842a" opacity="0.6"/>
+        <circle cx="28" cy="31" r="1.5" fill="#e8842a" opacity="0.6"/>
+        <line x1="26" y1="10" x2="26" y2="14" stroke="#e8842a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="23" y1="11" x2="24" y2="14" stroke="#e8842a" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="29" y1="11" x2="28" y2="14" stroke="#e8842a" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
     <div class="info">
-      <span class="tag">Lifestyle</span>
+      <span class="tag" style="color:#8a4f00;">Lifestyle</span>
       <span class="name">Best Summer Beverages for RVers</span>
     </div>
     <div class="arrow">›</div>
   </a>
 
+  <!-- Alaska -->
   <a class="tip-card" href="https://reinaldomedina.github.io/ta2-content/tips/alaska-prep.html">
-    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/bre2.jpg" alt="Alaska" />
+    <div class="tip-icon">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="14" fill="#e8f4fd"/>
+        <path d="M12 38 L20 20 L26 30 L31 24 L40 38 Z" fill="#0d4f7c" opacity="0.12"/>
+        <path d="M12 38 L20 20 L26 30 L31 24 L40 38 Z" stroke="#0d4f7c" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+        <path d="M22 18 L26 12 L30 18" fill="white" stroke="#0d4f7c" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M24 18 H28" stroke="#0d4f7c" stroke-width="1.5"/>
+        <circle cx="38" cy="16" r="3" fill="#f4b942" opacity="0.3"/>
+        <circle cx="38" cy="16" r="3" stroke="#f4b942" stroke-width="1.5" fill="none"/>
+        <path d="M38 13 V11 M38 21 V19 M35 16 H33 M43 16 H41" stroke="#f4b942" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M14 38 H38" stroke="#0d4f7c" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
     <div class="info">
-      <span class="tag">Trip Planning</span>
+      <span class="tag" style="color:#0d4f7c;">Trip Planning</span>
       <span class="name">Preparing Your RV for a Trip to Alaska</span>
     </div>
     <div class="arrow">›</div>
   </a>
 
+  <!-- Tires -->
   <a class="tip-card" href="https://reinaldomedina.github.io/ta2-content/tips/rv-tires.html">
-    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/Pilot%20Knolls.jpg" alt="Tires" />
+    <div class="tip-icon">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="14" fill="#f3f3f3"/>
+        <circle cx="26" cy="26" r="13" fill="#2d2d2d" opacity="0.08"/>
+        <circle cx="26" cy="26" r="13" stroke="#2d2d2d" stroke-width="2" fill="none"/>
+        <circle cx="26" cy="26" r="8" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+        <circle cx="26" cy="26" r="3.5" fill="#2d2d2d" opacity="0.2"/>
+        <circle cx="26" cy="26" r="3.5" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+        <line x1="26" y1="13" x2="26" y2="18" stroke="#2d2d2d" stroke-width="2" stroke-linecap="round"/>
+        <line x1="26" y1="34" x2="26" y2="39" stroke="#2d2d2d" stroke-width="2" stroke-linecap="round"/>
+        <line x1="13" y1="26" x2="18" y2="26" stroke="#2d2d2d" stroke-width="2" stroke-linecap="round"/>
+        <line x1="34" y1="26" x2="39" y2="26" stroke="#2d2d2d" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
     <div class="info">
-      <span class="tag">Safety</span>
+      <span class="tag" style="color:#1a3a6e;">Safety</span>
       <span class="name">What to Look for When Buying RV Tires</span>
     </div>
     <div class="arrow">›</div>
   </a>
 
+  <!-- Pets -->
   <a class="tip-card" href="https://reinaldomedina.github.io/ta2-content/tips/traveling-with-pets.html">
-    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/Murray.jpg" alt="Pets" />
+    <div class="tip-icon">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="14" fill="#fef3e8"/>
+        <ellipse cx="26" cy="30" rx="10" ry="8" fill="#854F0B" opacity="0.12"/>
+        <ellipse cx="26" cy="30" rx="10" ry="8" stroke="#854F0B" stroke-width="1.8" fill="none"/>
+        <circle cx="22" cy="28" r="1.5" fill="#854F0B"/>
+        <circle cx="30" cy="28" r="1.5" fill="#854F0B"/>
+        <path d="M23 33 Q26 35 29 33" stroke="#854F0B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <ellipse cx="20" cy="22" rx="3" ry="4" fill="#854F0B" opacity="0.12" transform="rotate(-15 20 22)"/>
+        <ellipse cx="20" cy="22" rx="3" ry="4" stroke="#854F0B" stroke-width="1.5" fill="none" transform="rotate(-15 20 22)"/>
+        <ellipse cx="32" cy="22" rx="3" ry="4" fill="#854F0B" opacity="0.12" transform="rotate(15 32 22)"/>
+        <ellipse cx="32" cy="22" rx="3" ry="4" stroke="#854F0B" stroke-width="1.5" fill="none" transform="rotate(15 32 22)"/>
+        <circle cx="16" cy="33" r="2.5" fill="#854F0B" opacity="0.12"/>
+        <circle cx="16" cy="33" r="2.5" stroke="#854F0B" stroke-width="1.5" fill="none"/>
+        <circle cx="36" cy="33" r="2.5" fill="#854F0B" opacity="0.12"/>
+        <circle cx="36" cy="33" r="2.5" stroke="#854F0B" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
     <div class="info">
-      <span class="tag">Lifestyle</span>
+      <span class="tag" style="color:#854F0B;">Lifestyle</span>
       <span class="name">Traveling with Pets in Your RV</span>
     </div>
     <div class="arrow">›</div>
   </a>
 
+  <!-- Etiquette -->
   <a class="tip-card" href="https://reinaldomedina.github.io/ta2-content/tips/camping-etiquette.html">
-    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/bre.jpg" alt="Etiquette" />
+    <div class="tip-icon">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="14" fill="#e6f4ea"/>
+        <circle cx="20" cy="22" r="5" fill="#1e6b3a" opacity="0.12"/>
+        <circle cx="20" cy="22" r="5" stroke="#1e6b3a" stroke-width="1.8" fill="none"/>
+        <circle cx="32" cy="22" r="5" fill="#1e6b3a" opacity="0.12"/>
+        <circle cx="32" cy="22" r="5" stroke="#1e6b3a" stroke-width="1.8" fill="none"/>
+        <path d="M14 38 C14 32 26 30 26 30 C26 30 38 32 38 38" stroke="#1e6b3a" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <path d="M22 22 L24 24 L28 19" stroke="#1e6b3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
     <div class="info">
-      <span class="tag">Community</span>
+      <span class="tag" style="color:#1e6b3a;">Community</span>
       <span class="name">5 Camping Etiquette Rules Every RVer Should Know</span>
     </div>
     <div class="arrow">›</div>
   </a>
 
+  <!-- Winterizing -->
   <a class="tip-card" href="https://reinaldomedina.github.io/ta2-content/tips/winterizing.html">
-    <img src="https://reinaldomedina.github.io/ta2-content/images/tip1.jpg" alt="Winterizing" />
+    <div class="tip-icon">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="14" fill="#e8f4fd"/>
+        <line x1="26" y1="10" x2="26" y2="42" stroke="#0d4f7c" stroke-width="2" stroke-linecap="round"/>
+        <line x1="10" y1="26" x2="42" y2="26" stroke="#0d4f7c" stroke-width="2" stroke-linecap="round"/>
+        <line x1="14.7" y1="14.7" x2="37.3" y2="37.3" stroke="#0d4f7c" stroke-width="2" stroke-linecap="round"/>
+        <line x1="37.3" y1="14.7" x2="14.7" y2="37.3" stroke="#0d4f7c" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="26" cy="26" r="5" fill="#0d4f7c" opacity="0.15"/>
+        <circle cx="26" cy="26" r="5" stroke="#0d4f7c" stroke-width="1.8" fill="none"/>
+        <circle cx="26" cy="10" r="2" fill="#0d4f7c"/>
+        <circle cx="26" cy="42" r="2" fill="#0d4f7c"/>
+        <circle cx="10" cy="26" r="2" fill="#0d4f7c"/>
+        <circle cx="42" cy="26" r="2" fill="#0d4f7c"/>
+        <circle cx="14.7" cy="14.7" r="2" fill="#0d4f7c"/>
+        <circle cx="37.3" cy="37.3" r="2" fill="#0d4f7c"/>
+        <circle cx="37.3" cy="14.7" r="2" fill="#0d4f7c"/>
+        <circle cx="14.7" cy="37.3" r="2" fill="#0d4f7c"/>
+      </svg>
+    </div>
     <div class="info">
-      <span class="tag">Maintenance</span>
+      <span class="tag" style="color:#0d4f7c;">Maintenance</span>
       <span class="name">Winterizing Your Fresh Water System</span>
     </div>
     <div class="arrow">›</div>
