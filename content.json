@@ -81,6 +81,15 @@
       "enabled": true
     },
     {
+      "id": "tip008",
+      "type": "TIP",
+      "title": "5 Camping Etiquette Rules Every RVer Should Know",
+      "summary": "Good neighbors make great campgrounds. Quiet hours, site boundaries, pets, and more.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/bre2.jpg",
+      "link": "https://reinaldomedina.github.io/ta2-content/tips/camping-etiquette.html",
+      "enabled": true
+    },
+    {
       "id": "park_guide",
       "type": "PARK",
       "title": "RV Park Guides",
