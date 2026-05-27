@@ -1,191 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Park Guides — TrekAssistant2</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Park Guides — TrekAssistant</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
-      color: #1f2937; background: #f9fafb; }
-
-    /* Header */
-    .header { background: #1a2744; padding: 20px 20px 24px; }
-    .header-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-    .back-btn { color: #68a0ef; font-size: 14px; text-decoration: none; 
-      display: flex; align-items: center; gap: 4px; }
-    .header h1 { font-size: 24px; font-weight: 700; color: white; }
-    .header p { font-size: 14px; color: rgba(255,255,255,0.65); margin-top: 4px; }
-
-    /* Search */
-    .search-wrap { padding: 16px 20px; background: white; 
-      border-bottom: 1px solid #e5e7eb; }
-    .search { width: 100%; padding: 10px 14px; border: 1px solid #e5e7eb;
-      border-radius: 10px; font-size: 15px; color: #1f2937;
-      background: #f9fafb; outline: none; }
-    .search:focus { border-color: #68a0ef; background: white; }
-
-    /* Filter chips */
-    .filters { display: flex; gap: 8px; padding: 12px 20px; 
-      overflow-x: auto; background: white; border-bottom: 1px solid #e5e7eb; }
-    .filter-chip { flex-shrink: 0; padding: 5px 14px; border-radius: 99px;
-      font-size: 13px; font-weight: 500; border: 1px solid #e5e7eb;
-      background: white; color: #4b5563; cursor: pointer; }
-    .filter-chip.active { background: #68a0ef; color: white; border-color: #68a0ef; }
-
-    /* Park count */
-    .count { padding: 12px 20px 4px; font-size: 12px; 
-      color: #6b7280; font-weight: 500; letter-spacing: 0.4px; }
-
-    /* Park grid */
-    .parks { padding: 8px 16px 32px; }
-    .park-card { background: white; border-radius: 14px; overflow: hidden;
-      margin-bottom: 14px; border: 1px solid #e5e7eb;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-decoration: none;
-      display: block; }
-    .park-card:active { opacity: 0.9; }
-    .park-img { width: 100%; height: 160px; object-fit: cover; display: block;
-      background: #1a2744; }
-    .park-img-placeholder { width: 100%; height: 160px; background: 
-      linear-gradient(135deg, #1a3a5c 0%, #2d5a8e 100%);
-      display: flex; align-items: center; justify-content: center; }
-    .park-img-placeholder span { font-size: 40px; }
-    .park-body { padding: 14px 16px; }
-    .park-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
-    .park-state { font-size: 11px; font-weight: 600; color: #68a0ef; 
-      letter-spacing: 0.4px; }
-    .park-type-badge { font-size: 10px; padding: 2px 8px; border-radius: 99px;
-      font-weight: 500; }
-    .badge-national { background: #edf3fd; color: #185fa5; }
-    .badge-state { background: #eaf3de; color: #3b6d11; }
-    .badge-new { background: #fef2f2; color: #a32d2d; }
-    .park-name { font-size: 17px; font-weight: 700; color: #0f1a32; 
-      margin-bottom: 4px; }
-    .park-summary { font-size: 13px; color: #4b5563; line-height: 1.5;
-      margin-bottom: 10px; }
-    .park-footer { display: flex; justify-content: space-between; 
-      align-items: center; padding-top: 10px; 
-      border-top: 1px solid #f3f4f6; }
-    .park-stats { display: flex; gap: 14px; }
-    .park-stat { font-size: 12px; color: #6b7280; display: flex; 
-      align-items: center; gap: 4px; }
-    .park-stat-icon { font-size: 13px; }
-    .read-more { font-size: 13px; color: #68a0ef; font-weight: 600;
-      display: flex; align-items: center; gap: 3px; }
-
-    /* Empty state */
-    .empty { text-align: center; padding: 48px 20px; color: #6b7280; }
-    .empty-icon { font-size: 48px; margin-bottom: 12px; }
-    .empty h3 { font-size: 18px; color: #0f1a32; margin-bottom: 6px; }
-
-    /* Coming soon card */
-    .coming-soon { background: #f9fafb; border: 1px dashed #e5e7eb; 
-      border-radius: 14px; padding: 24px; text-align: center; 
-      margin-bottom: 14px; }
-    .coming-soon p { font-size: 14px; color: #6b7280; }
-    .coming-soon strong { color: #0f1a32; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f7; color: #1a1a1a; }
+    header { background: #1a3a6e; color: white; padding: 28px 20px 24px; }
+    header h1 { font-size: 24px; font-weight: 800; }
+    header p { font-size: 14px; opacity: 0.75; margin-top: 4px; }
+    .list { max-width: 680px; margin: 0 auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+    .park-card { background: white; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; display: flex; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .park-card img { width: 110px; height: 110px; object-fit: cover; flex-shrink: 0; }
+    .park-card .info { padding: 12px 14px; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+    .park-card .state { font-size: 11px; font-weight: 600; color: #1a3a6e; letter-spacing: 0.5px; text-transform: uppercase; }
+    .park-card .name { font-size: 16px; font-weight: 700; color: #1a1a1a; line-height: 1.2; }
+    .park-card .desc { font-size: 13px; color: #666; line-height: 1.4; }
+    .park-card .arrow { margin-left: auto; padding-right: 14px; display: flex; align-items: center; color: #1a3a6e; font-size: 18px; flex-shrink: 0; }
+    footer { text-align: center; font-size: 12px; color: #aaa; padding: 24px; }
   </style>
 </head>
 <body>
-
-  <div class="header">
-    <h1>🏕️ Park Guides</h1>
-    <p>RV-friendly guides updated regularly</p>
-  </div>
-
-  <div class="search-wrap">
-    <input class="search" type="search" placeholder="Search parks..." 
-      id="searchInput" oninput="filterParks()" />
-  </div>
-
-  <div class="filters">
-    <div class="filter-chip active" onclick="setFilter('all', this)">All Parks</div>
-    <div class="filter-chip" onclick="setFilter('national', this)">National</div>
-    <div class="filter-chip" onclick="setFilter('state', this)">State</div>
-    <div class="filter-chip" onclick="setFilter('texas', this)">Texas</div>
-    <div class="filter-chip" onclick="setFilter('new', this)">New</div>
-  </div>
-
-  <div class="count" id="parkCount">1 park guide</div>
-
-  <div class="parks" id="parkList">
-
-    <!-- Big Bend -->
-    <a class="park-card" href="bigbend.html" data-state="texas" data-type="national">
-      <img class="park-img" src="../images/park1.jpg" alt="Big Bend" 
-        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
-      <div class="park-img-placeholder" style="display:none"><span>🏜️</span></div>
-      <div class="park-body">
-        <div class="park-meta">
-          <span class="park-state">TEXAS</span>
-          <span class="park-type-badge badge-national">National Park</span>
-        </div>
-        <div class="park-name">Big Bend National Park</div>
-        <div class="park-summary">One of the most remote and rewarding parks in the US. 
-          Dramatic desert canyons, mountain trails, and the Rio Grande.</div>
-        <div class="park-footer">
-          <div class="park-stats">
-            <div class="park-stat">
-              <span class="park-stat-icon">🚐</span> RV Friendly
-            </div>
-            <div class="park-stat">
-              <span class="park-stat-icon">⚡</span> Hookups Available
-            </div>
-          </div>
-          <div class="read-more">Read guide →</div>
-        </div>
-      </div>
-    </a>
-
-    <!-- Coming soon placeholder -->
-    <div class="coming-soon" id="comingSoon">
-      <div style="font-size:32px; margin-bottom:8px;">🗺️</div>
-      <p><strong>More guides coming soon.</strong><br>
-      Guadalupe Mountains, Palo Duro Canyon, and more.</p>
-    </div>
-
-  </div>
-
-  <script>
-    let activeFilter = 'all';
-
-    function setFilter(filter, el) {
-      activeFilter = filter;
-      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-      el.classList.add('active');
-      filterParks();
-    }
-
-    function filterParks() {
-      const query = document.getElementById('searchInput').value.toLowerCase();
-      const cards = document.querySelectorAll('.park-card');
-      let visible = 0;
-
-      cards.forEach(card => {
-        const name = card.querySelector('.park-name').textContent.toLowerCase();
-        const summary = card.querySelector('.park-summary').textContent.toLowerCase();
-        const state = card.dataset.state || '';
-        const type = card.dataset.type || '';
-
-        const matchesSearch = name.includes(query) || summary.includes(query);
-        const matchesFilter = activeFilter === 'all'
-          || activeFilter === state
-          || activeFilter === type
-          || (activeFilter === 'new' && card.dataset.new === 'true');
-
-        if (matchesSearch && matchesFilter) {
-          card.style.display = 'block';
-          visible++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-
-      document.getElementById('parkCount').textContent =
-        `${visible} park guide${visible !== 1 ? 's' : ''}`;
-      document.getElementById('comingSoon').style.display = visible === 0 ? 'none' : 'block';
-    }
-  </script>
-
+<header>
+  <h1>🗺 Park Guides</h1>
+  <p>Handpicked RV-friendly parks reviewed by the TrekAssistant community</p>
+</header>
+<div class="list">
+  <a class="park-card" href="https://reinaldomedina.github.io/ta2-content/parks/burns-run-east.html">
+    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/bre.jpg" alt="Burns Run East" />
+    <div class="info"><span class="state">Oklahoma · Lake Texoma</span><span class="name">Burns Run East</span><span class="desc">Direct lake access · Electric & Water · Open year-round</span></div>
+    <div class="arrow">›</div>
+  </a>
+  <a class="park-card" href="https://reinaldomedina.github.io/ta2-content/parks/burns-run-west.html">
+    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/brw.jpg" alt="Burns Run West" />
+    <div class="info"><span class="state">Oklahoma · Lake Texoma</span><span class="name">Burns Run West</span><span class="desc">Beautiful tree canopy · 117 sites · Hiking trails</span></div>
+    <div class="arrow">›</div>
+  </a>
+  <a class="park-card" href="https://reinaldomedina.github.io/ta2-content/parks/twin-coves.html">
+    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/twincove.jpg" alt="Twin Coves" />
+    <div class="info"><span class="state">Texas · Grapevine Lake</span><span class="name">Twin Coves Park</span><span class="desc">Full hookups · Northshore Trail · Outstanding staff</span></div>
+    <div class="arrow">›</div>
+  </a>
+  <a class="park-card" href="https://reinaldomedina.github.io/ta2-content/parks/lake-ouachita.html">
+    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/Ouachita.jpg" alt="Lake Ouachita" />
+    <div class="info"><span class="state">Arkansas · Ouachita National Forest</span><span class="name">Lake Ouachita State Park</span><span class="desc">Pristine lake · Full hookups · Near Hot Springs</span></div>
+    <div class="arrow">›</div>
+  </a>
+  <a class="park-card" href="https://reinaldomedina.github.io/ta2-content/parks/buzzards-roost.html">
+    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/Murray.jpg" alt="Buzzard's Roost" />
+    <div class="info"><span class="state">Oklahoma · Lake Murray State Park</span><span class="name">Buzzard's Roost</span><span class="desc">Lakefront sites · Full hookups · Tucker Tower views</span></div>
+    <div class="arrow">›</div>
+  </a>
+  <a class="park-card" href="https://reinaldomedina.github.io/ta2-content/parks/pilot-knoll.html">
+    <img src="https://reinaldomedina.github.io/ta2-content/images/parks/Pilot%20Knolls.jpg" alt="Pilot Knoll" />
+    <div class="info"><span class="state">Texas · Lake Lewisville</span><span class="name">Pilot Knoll Park</span><span class="desc">Lake access · City nearby · Hiking & equestrian trails</span></div>
+    <div class="arrow">›</div>
+  </a>
+</div>
+<footer>TrekAssistant Park Guide · More parks coming soon</footer>
 </body>
 </html>
