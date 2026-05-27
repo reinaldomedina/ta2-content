@@ -27,11 +27,65 @@
       "enabled": true
     },
     {
+      "id": "tip002",
+      "type": "TIP",
+      "title": "How to Hitch a Travel Trailer Safely",
+      "summary": "Step-by-step guide to safe hitching — from ball alignment to final walk-around.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/brw.jpg",
+      "link": "https://reinaldomedina.github.io/ta2-content/tips/hitch-safely.html",
+      "enabled": true
+    },
+    {
+      "id": "tip003",
+      "type": "TIP",
+      "title": "Top 10 Checks After Winter Storage",
+      "summary": "Don't hit the road without running through this summer-ready checklist first.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/twincove.jpg",
+      "link": "https://reinaldomedina.github.io/ta2-content/tips/summer-ready.html",
+      "enabled": true
+    },
+    {
+      "id": "tip004",
+      "type": "TIP",
+      "title": "Best Summer Beverages for RVers",
+      "summary": "8 refreshing non-alcoholic drinks to keep you cool at the campsite — with recipes.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/Ouachita.jpg",
+      "link": "https://reinaldomedina.github.io/ta2-content/tips/summer-beverages.html",
+      "enabled": true
+    },
+    {
+      "id": "tip005",
+      "type": "TIP",
+      "title": "Preparing Your RV for Alaska",
+      "summary": "The ALCAN demands serious prep. Everything you need to know before driving north.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/bre2.jpg",
+      "link": "https://reinaldomedina.github.io/ta2-content/tips/alaska-prep.html",
+      "enabled": true
+    },
+    {
+      "id": "tip006",
+      "type": "TIP",
+      "title": "What to Look for When Buying RV Tires",
+      "summary": "Age, load rating, DOT codes, and what brands RVers actually trust.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/Pilot%20Knolls.jpg",
+      "link": "https://reinaldomedina.github.io/ta2-content/tips/rv-tires.html",
+      "enabled": true
+    },
+    {
+      "id": "tip007",
+      "type": "TIP",
+      "title": "Traveling with Pets in Your RV",
+      "summary": "Health records, temperature safety, wildlife risks, and a full pet travel checklist.",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/Murray.jpg",
+      "link": "https://reinaldomedina.github.io/ta2-content/tips/traveling-with-pets.html",
+      "enabled": true
+    },
+    {
       "id": "park_guide",
       "type": "PARK",
       "title": "RV Park Guides",
       "summary": "Handpicked parks reviewed by RVers like you. Lake Texoma, Grapevine Lake, Lake Murray, Lake Ouachita and more.",
-      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/bre2.jpg",
+      "image_url": "https://reinaldomedina.github.io/ta2-content/images/parks/bre.jpg",
       "link": "https://reinaldomedina.github.io/ta2-content/parks/index.html",
       "enabled": true
     }
