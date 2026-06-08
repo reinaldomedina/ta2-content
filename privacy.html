@@ -1,115 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — TrekAssistant</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      color: #1a1a1a;
-      line-height: 1.7;
-    }
-    header {
-      background: #1a3a6e;
-      color: white;
-      padding: 40px 24px 32px;
-      text-align: center;
-    }
-    header h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
-    header p { font-size: 14px; opacity: 0.75; }
-    main {
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 24px 80px;
-    }
-    h2 {
-      font-size: 18px;
-      font-weight: 700;
-      color: #1a3a6e;
-      margin: 36px 0 10px;
-    }
-    p { margin-bottom: 14px; font-size: 15px; color: #333; }
-    ul { margin: 0 0 14px 20px; }
-    ul li { font-size: 15px; color: #333; margin-bottom: 6px; }
-    a { color: #1a3a6e; }
-    .updated {
-      font-size: 13px;
-      color: #888;
-      margin-bottom: 32px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    footer {
-      text-align: center;
-      font-size: 13px;
-      color: #aaa;
-      padding: 32px 24px;
-      border-top: 1px solid #e0e0e0;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — TrekAssistant</title>
+<style>
+  :root {
+    --ink: #0f1a32;
+    --ink-soft: #45516b;
+    --muted: #6b7689;
+    --accent: #2f6df0;
+    --line: #e6e9f0;
+    --bg: #ffffff;
+    --band: #0f1a32;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink-soft);
+    background: var(--bg);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .hero {
+    background: linear-gradient(135deg, #12203f 0%, #1f3d7a 100%);
+    color: #fff;
+    padding: 64px 24px 56px;
+    text-align: center;
+  }
+  .hero .mark {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    font-weight: 700;
+  }
+  .hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-top: 14px;
+    letter-spacing: -0.5px;
+  }
+  .hero p {
+    margin-top: 12px;
+    color: rgba(255,255,255,0.82);
+    font-size: 15px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h2 {
+    color: var(--ink);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 38px 0 12px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0 12px 22px; }
+  li { margin: 7px 0; }
+  strong { color: var(--ink); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .updated {
+    display: inline-block;
+    background: #eef3ff;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 4px;
+  }
+  .footer {
+    border-top: 1px solid var(--line);
+    margin-top: 48px;
+    padding-top: 24px;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+  }
+</style>
 </head>
 <body>
+  <header class="hero">
+    <div class="mark">TrekAssistant</div>
+    <h1>Privacy Policy</h1>
+    <p>Your rig, organized — and your data, kept private.</p>
+  </header>
 
-<header>
-  <h1>TrekAssistant</h1>
-  <p>Privacy Policy</p>
-</header>
+  <main class="wrap">
+    <span class="updated">Last updated: June 8, 2026</span>
 
-<main>
-  <p class="updated">Last updated: May 23, 2026</p>
+    <p>TrekAssistant ("we," "our," or "us") explains here how the TrekAssistant mobile application handles your information. In short: TrekAssistant is a local-first app, and your data stays on your device.</p>
 
-  <p>TrekAssistant ("we," "our," or "us") is developed by TrekAssistant. This Privacy Policy explains how the TrekAssistant mobile application handles your information.</p>
+    <h2>1. Information We Collect</h2>
+    <p>All data you enter — including vehicle profiles, maintenance records, expenses, trips, and documents — is stored exclusively on your device. We do not operate servers that collect or store this personal data.</p>
+    <p>Limited information leaves your device only in these cases:</p>
+    <ul>
+      <li><strong>Purchase processing.</strong> When you buy the app's one-time unlock, the purchase is handled by Apple and by RevenueCat, our in-app purchase management provider. RevenueCat receives transaction information and an anonymous, randomly generated identifier used to recognize your purchase across reinstalls. This identifier is not linked to your name or email. See RevenueCat's privacy policy at <a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a>.</li>
+      <li><strong>Approximate location for weather.</strong> To show local weather on the home screen, the app requests an approximate location derived from your device's IP address (via ipwho.is) and then retrieves weather for that area (via Open-Meteo). This is used only to display weather and is not stored by us.</li>
+    </ul>
 
-  <h2>1. Information We Collect</h2>
-  <p>TrekAssistant is a local-first application. All data you enter — including vehicle profiles, maintenance records, expenses, trips, and documents — is stored exclusively on your device. We do not operate servers that collect or store your personal data.</p>
+    <h2>2. Information We Do Not Collect</h2>
+    <ul>
+      <li>We do not collect your name, email address, or contact information</li>
+      <li>We do not use analytics or behavioral tracking SDKs</li>
+      <li>We do not sell or share data with third parties for advertising</li>
+      <li>We do not display ads</li>
+      <li>We do not require an account to use the app</li>
+    </ul>
 
-  <p>The only information that leaves your device is:</p>
-  <ul>
-    <li><strong>Trip community submissions</strong> — if you choose to submit a trip to the TrekAssistant community, the trip details (destination, dates, rating, notes) are sent to our review system. Submission is always voluntary and requires your explicit action.</li>
-    <li><strong>Crash reports</strong> — anonymized crash data may be collected by Apple through standard iOS mechanisms to help us improve app stability.</li>
-  </ul>
+    <h2>3. Data Storage</h2>
+    <p>App data is stored locally on your device using SQLite. Photos and documents you add are stored in the app's private storage directory. This data may be included in your device's standard iCloud or device backup if you have backups enabled — those backups are controlled by Apple and your device settings, not by us.</p>
+    <p>If you delete the app, the locally stored data is removed from your device.</p>
 
-  <h2>2. Information We Do Not Collect</h2>
-  <ul>
-    <li>We do not collect your name, email address, or contact information</li>
-    <li>We do not collect location data</li>
-    <li>We do not track your usage or behavior within the app</li>
-    <li>We do not sell or share any data with third parties for advertising</li>
-    <li>We do not display ads</li>
-  </ul>
+    <h2>4. Third-Party Services</h2>
+    <ul>
+      <li><strong>Apple App Store</strong> — processes payment for the app purchase. We never receive or store your payment details.</li>
+      <li><strong>RevenueCat</strong> — manages purchase validation and entitlements, as described in Section 1.</li>
+      <li><strong>ipwho.is</strong> — provides approximate, IP-based location used only to fetch weather.</li>
+      <li><strong>Open-Meteo</strong> — provides weather data for your approximate area.</li>
+    </ul>
 
-  <h2>3. Data Storage</h2>
-  <p>All app data is stored locally on your device using SQLite. Photos and documents you add are stored in the app's private storage directory. This data is included in your device's standard iCloud or iTunes backup if you have backups enabled.</p>
+    <h2>5. Children's Privacy</h2>
+    <p>TrekAssistant is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
 
-  <p>If you delete the app, all locally stored data is permanently removed from your device.</p>
+    <h2>6. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Significant changes will be reflected by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-  <h2>4. Third-Party Services</h2>
-  <p>TrekAssistant uses the following third-party services:</p>
-  <ul>
-    <li><strong>Apple App Store</strong> — handles payment processing for the app purchase. We do not receive or store your payment information.</li>
-    <li><strong>OpenWeather API</strong> — used to display weather information on the home screen. Your location is not sent; weather is retrieved based on a general region.</li>
-    <li><strong>GitHub Pages</strong> — hosts the Discover feed content shown in the app. No personal data is transmitted.</li>
-  </ul>
+    <h2>7. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:info@trekassistant.com">info@trekassistant.com</a>.</p>
 
-  <h2>5. Children's Privacy</h2>
-  <p>TrekAssistant is not directed at children under 13 years of age. We do not knowingly collect personal information from children.</p>
-
-  <h2>6. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-
-  <h2>7. Contact Us</h2>
-  <p>If you have questions about this Privacy Policy, please contact us at:</p>
-  TrekAssistant<p><strong></strong><br />
-  Email: <a href="mailto:support@trekassistant.com">support@trekassistant.com</a></p>
-
-</main>
-
-<footer>
-  &copy; 2026 MeDig LLC. All rights reserved.
-</footer>
-
+    <div class="footer">
+      © 2026 TrekAssistant. All rights reserved.
+    </div>
+  </main>
 </body>
 </html>
